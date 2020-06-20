@@ -1,0 +1,1575 @@
+/* -------------- gerais --------------- */
+
+*:after, *:before, * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'a song for jennifer';
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+}
+
+nav {
+    font-family: "Crimes Times Six";
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input, select, option, textarea {
+    background: transparent;
+    padding: 5px;
+    border: 2px solid white;
+    outline: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    font-family: 'a song for jennifer';
+    transition-property: outline, box-shadow;
+    color: #fff;
+}
+
+input::placeholder {
+    text-align: center;
+    line-height: 50px;
+    color: #efeff1;
+    font-weight: bolder;
+}
+
+input:not(:placeholder-shown) {
+    color: #efeff1;
+    text-align: center;
+}
+
+input:focus, select:focus, button:focus {
+    box-shadow: 0 0 5px 1px #22b9a1;
+    outline: 2px solid #22b9a0;
+    color: #efeff1;
+    text-align: center;
+}
+
+select {
+    max-width: 200px;
+}
+
+option {
+    background-color: #0d0e0e;
+}
+
+option:disabled {
+    background-color: #bfbfbf;
+    color: #191919;
+}
+
+textarea {
+    border: 0;
+    text-align: justify;
+    font-family: "Roobert";
+    background: #212121a3;
+    padding: 10px;
+}
+
+textarea:focus {
+    box-shadow: 0 0 5px 1px #22b9a1;
+    outline: 2px solid #22b9a0;
+}
+
+.wrapper-table {
+    display: table;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.inner-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nav-off {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+.btn {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: a song for jennifer;
+}
+
+.destacar {
+    color: #22b9a1
+}
+
+.truncate-parent {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.truncate-child {
+    display: table-cell;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* -------------- navbar --------------- */
+
+.navbar {
+  background-color: transparent;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.navbar .nav-item {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+.nav-item-link, .nav-item-link:focus  {
+    color: inherit;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.toggler-icon {
+    display: block;
+    background-image: url(assets/hamburger-menu-white.svg);
+    height: 20px;
+    background-size: cover;
+    width: 20px;
+    margin: 5px 0 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333333ad;
+    min-width: 190px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    z-index: 99999999999;
+    top: 100%;
+    /*font-family: 'a song for jennifer';*/
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 12pt;
+}
+
+.navbar li:hover, .dropdown:hover .dropbtn {
+  background-color: transparent;
+  transition: color .3s ease;
+  color: #ddd;
+}
+
+.dropdown-content a:hover {
+  background-color: #22b9a1;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero-image {
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    z-index: -9;
+}
+
+.hero-image.home  {
+    background-image: url("assets/bg_5.png");
+}
+
+.hero-image.not-home  {
+    background-image: url("assets/c009439c4893c781f3335503208b03c7.jpg");
+}
+
+/*main::before {
+    content: " ";
+    position: absolute;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url("assets/c009439c4893c781f3335503208b03c7.jpg");   
+    width: 100%;
+    z-index: -9;
+}*/
+
+.main {
+    height: 100vh;
+}
+
+/* -------------- bagdes --------------- */
+
+.cellbit-badge {
+    background-image: url(assets/cellbit_mod.png);
+}
+
+.calango-badge {
+    background-image: url(assets/calango_mod.png);
+    
+}
+
+.guaxinim-badge {
+    background-image: url(assets/rakin.jpg);
+    
+}
+
+.gabi-badge {
+    background-image: url(assets/gabi_mod.png);
+    
+}
+
+.ljoga-badge {
+    background-image: url(assets/gabi.jpg);
+    
+}
+
+.rakin-badge {
+    background-image: url(assets/rakin_mod.png);
+}
+
+/* -------------- create --------------- */
+
+.create-post-form {
+    width: inherit;
+}
+
+.create-options {
+    padding: 30px 50px;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(19, 17, 17, 0.89);
+}
+
+.create-option {
+    margin: 20px 0;
+    background-color: #2b2a2a;
+    border-radius: 40px;
+    transition: box-shadow .3s ease;
+}
+
+.create-option:hover {
+    transition: box-shadow .3s ease;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.48);
+}
+
+.create-option > .create-btn {
+    padding: 0;
+    width: 100%;
+    font-size: 12pt;
+    position: relative;
+}
+
+.create-option > .create-btn > a {
+    font-family: 'a song for jennifer';
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    vertical-align: middle;
+    height: 100%;
+    text-align: left;
+    padding: 5px 45px 5px 55px;
+}
+
+.create-btn-icon-bg {
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    padding: 10px;
+    left: 0;
+    bottom: 50%;
+    margin: 0;
+    transform: translateY(50%);
+    vertical-align: middle;
+    background-color: #f5ebeb;
+    border-radius: 50%;
+}
+
+.create-btn-icon {
+    display: block;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#criatura { background-image: url("assets/skull (1).svg"); }
+
+#fanart { background-image: url("assets/paint.svg"); }
+
+#teoria { background-image: url("assets/text.svg"); }
+
+#personagem { background-image: url("assets/person.svg"); }
+
+
+/* -------------- criar personagem --------------- */
+
+.create-personagem, 
+.create-criatura {
+    grid-template-rows: repeat(3, auto);
+}
+
+.create-personagem > textarea, 
+.create-criatura > textarea {
+    resize: none;
+    width: 100%;
+    height: 20vh;
+    grid-column: 1 / -1;
+}
+
+.create-personagem-wrapper, 
+.create-criatura-wrapper {
+    text-align: center;
+}
+
+.create-personagem-wrapper > .form-inner > *,
+.create-criatura-wrapper > .form-inner > * {
+    display: block;
+    margin: 0 auto;
+}
+
+.create-personagem > .btn:hover, 
+.create-criatura > .btn:hover {
+    background-color: #262f2e;
+    transition: background-color .3s ease;
+}
+
+.form-inner > input {
+    margin: 10px auto !important;
+}
+
+.form-inner > textarea {
+    padding: 5px;
+    width: 100%;
+    height: 70px;
+    width: 100%;
+    resize: none;
+}
+
+.form-personagem-artigo {
+    text-align: center;
+    padding: 20px !important;
+}
+
+.form-artigo-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+}
+
+.markdown-field {
+    margin: 20px 0;
+}
+
+.markdown-preview {
+    margin: 10px auto;
+}
+
+.btn-post {
+    grid-column: 1 / -1;
+    color: #fff;
+    background-color: rgba(33, 33, 33, 0.92);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 12pt;
+    z-index: 999;
+}
+
+/* -------------- fanart --------------- */
+
+.dropzone {
+    width: 60vh;
+    height: 50vh;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    border: 3px dashed #d2d2d2;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.dropzone > #fileDropRef {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.dropzone > .drop-placeholder {
+    
+}
+
+.dropzone > .drop-placeholder > label {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.dropzone > .drop-placeholder > svg {
+    width: 50px;
+    height: 50px;
+    fill: #fff;
+}
+
+.dropzone > .drop-placeholder > button {
+    color: #fff;
+    border: 4px solid #22b9a1;
+    padding: 10px;
+    background-color: #258a7a;
+    font-size: 12pt;
+}
+
+/* -------------- jogadores --------------- */
+
+.carousel-container {
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 55px 0;
+    /*transform: translate(0, 50%);*/
+}
+
+
+.jogadores {
+    display: block;
+    vertical-align: middle;
+    margin: 0 auto 40px;
+}
+
+.carousel-jogadores {
+    padding: 0;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.jogador {
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+.carousel-item-title {
+    font-family: "Crimes Times Six";
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.89);
+    position: absolute;
+}
+
+.carousel-item-title.active {
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.carousel-item-title.first {
+    bottom: 50%;
+    right: 100%;
+    transform: translateY(100%);
+}
+
+.carousel-item-title.last {
+    bottom: 50%;
+    left: 100%;
+    transform: translateY(100%);
+}
+
+.carousel-item-title.first, .carousel-item-title.last {
+    color: rgba(185, 184, 184, 0.7);
+    font-size: 15pt;
+}
+
+.diamond-overlay {
+    transform: rotate(45deg);
+    display: table-cell;
+    height: 50px;
+    width: 50px;
+    margin: 25px auto;
+    overflow: hidden;
+    background-color: transparent;
+    vertical-align: middle;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #da5516, #ff59c9);
+}
+
+.imagem-jogador {
+    transform: rotate(-45deg);
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: -25px;
+    background-size: cover;
+}
+
+.diamond-overlay.active {
+    height: 90px !important;
+    width: 90px !important;
+}
+
+.imagem-jogador.active {
+    width: 130px !important;
+    height: 130px !important;
+}
+
+#gabi {
+    background-image: url(assets/gabi.jpg);
+}
+
+#rakin {
+    background-image: url(assets/rakin.jpg);
+}
+
+#calango {
+    background-image: url(assets/calango.jpg);
+}
+
+.polaroid {
+    display: grid;
+    width: 13%;
+    height: 30vh;
+    min-width: 150px;
+    max-width: 200px;
+    min-height: 190px;
+    max-height: 250px;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+    background-color: #f3f3f3;
+    grid-template-rows: 80% 20%;
+    transform: rotate(5deg);
+    box-shadow: 1px 3px 20px 0px rgba(0, 0, 0, 0.86);
+}
+
+.polaroid-image {
+    background-image: url(assets/thiago.jpg);
+    background-size: cover;
+}
+
+.polaroid-name {
+    font-family: "Another Danger Demo Regular";
+    color: #0e0e0ef2;
+}
+
+.polaroid-name > h4 {
+    font-weight: 500;
+}
+
+.carousel-qtd, .btn-main {
+    margin: 10px auto 0;
+    display: block;
+    color: #fff;
+    width: max-content;
+}
+
+.btn-main {
+    border: 4px solid #ffffffcf;
+    font-size: 12pt;
+    transition: all .3s ease;
+    padding: 0
+}
+
+.btn-main:hover {
+    background-color: rgba(10, 10, 10, 0.74);
+    border: 4px solid #ffffffcf;
+    transition: all .3s ease;
+}
+
+.btn-main > a {
+    display: block;
+    color: #fff;
+    font-family: 'a song for jennifer';
+    padding: 5px 10px
+}
+
+.btn-main:hover > a {
+    transition: all .3s ease;
+}
+
+.personagem-artigo, .create-personagem, .create-criatura {
+    display: grid;
+    grid-template-columns: 250px calc(100% - 250px);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 20%;
+}
+
+.personagem-artigo .p_i_t {
+    text-align: center;
+    font-family: "Another Danger Demo Regular";
+    font-size: 14pt;
+}
+
+.personagem-wrapper, .form-personagem-info, .form-criatura-info {
+    padding: 20px 10px;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* -------------- artigo do personagem --------------- */
+
+.personagem-info, 
+.create-personagem-wrapper, 
+.create-criatura-wrapper {
+    position: relative;
+    display: grid;
+    align-items: center;
+}
+
+.personagem-info::before, 
+.create-personagem-wrapper::before, 
+.create-criatura-wrapper::before {
+    content: " ";
+    position: absolute;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    z-index: -9;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/a7b350147fdcd7db443ff0ed2c883342.jpg");
+}
+
+.personagem-polaroid {
+    width: 50%;
+    margin: 0 auto;
+    transform: rotate(3deg);
+}
+
+.personagem-polaroid > img {
+    width: 100%;
+}
+
+.fobias-lista {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.fobias-item {
+    display: table;
+}
+
+.fobias-item > img {
+    display: table-cell;
+    height: 100%;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.fobias-item.arrow-right {
+    transform: rotateY(180deg);
+}
+
+.fobias-item.arrow-right, .fobias-item.arrow-left {
+    cursor: pointer;
+}
+
+.fobia-icon > img {
+   margin: 0 auto;
+}
+
+.personagem-gerais {
+
+}
+
+.gerais-lista, .extras-lista {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    font-size: 10pt;
+}
+
+.personagem-desc, .form-personagem-artigo {
+    background-color: rgba(15, 16, 16, 0.91);
+    padding: 20px 0;
+    max-height: 70vh;
+    min-height: 30vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.form-personagem-info, .form-criatura-info, .form-personagem-artigo {
+    max-height: 50vh;
+}
+
+.artigo-header > h2 {
+    text-shadow: 0px 0px 6px #22b9a1;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: calc(1vw + 12pt);
+}
+
+.info-postagem {
+    text-align: center;
+    display: block;
+    margin: -10px 0;
+}
+
+.etiquetas-lista {
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.etiqueta-item {
+    width: auto;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    padding: 3px 10px 5px;
+    background-color: rgba(80, 86, 88, 0.91);
+    border-radius: 50px;
+}
+
+.etiqueta-item > img {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.etiqueta-item > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+    font-size: 11pt;
+}
+
+/* -------------- pagina de posts --------------- */
+
+.posts {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-column-gap: 10px;
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.posts-container {
+    width: 100%;
+}
+
+/* -------------- area de pesquisa --------------- */
+
+.search-box, .post-sort {
+    margin: 0 0 10px;
+}
+
+.search-box {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    padding: 10px 10px 10px 20px;
+    grid-template-rows: 30px;
+    align-items: center;
+    background-color: rgba(32, 32, 38, 0.88);
+}
+
+.search-box > input {
+    border: 0;
+    background-color: #28282d;
+    padding-left: 20px;
+}
+
+.search-box > input::placeholder {
+    color: rgba(220, 220, 220, .90);
+}
+
+.search-box > input::placeholder,
+.search-box > input:not(:placeholder-shown),
+.search-box > input:focus {
+    text-align: left;
+}
+
+.search-box > .btn-search {
+    padding: 0;
+}
+
+.search-box > .btn-search svg.magnifying-glass {
+    width: 20px;
+    height: 20px;
+    fill: #dcdcdc;
+}
+
+/* -------------- sort menu --------------- */
+
+.post-sort {
+    background-color: rgba(50, 50, 57, 0.88);
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.post-sort > .sort-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-sort > select {
+    justify-self: right;
+    background-color: rgba(76, 82, 84, 0.5411764705882353);
+    padding: 0 10px;
+    border: 0;
+}
+
+.sort-item {
+    display: inline-block;
+    padding: 5px 10px 5px 5px;
+    margin: 0 1px;
+    cursor: pointer;
+    border-left: 5px solid transparent;
+    transition-property: background-color, border-left;
+    transition: background-color .2s ease;
+}
+
+.sort-item.active,
+.sort-item:hover {
+    background-color: rgba(80, 86, 88, 0.91);
+    border-left-color: rgb(26, 138, 142);
+}
+
+.sort-item-content {
+    display: grid;
+    grid-template-columns: 20px auto;
+    grid-column-gap: 5px;
+}
+
+.sort-item-content > svg {
+    width: 20px;
+    height: 20px;
+    fill: #DCDCDC;
+}
+
+/* -------------- lista de posts --------------- */
+
+.post-container {
+    background-color: #202025;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.post-box {
+    display: grid;
+    grid-template-rows: 125px 35px;
+    grid-template-columns: 125px 1fr;
+    grid-gap: 10px;
+    transition: box-shadow .3s ease;
+    margin: 0px 0 20px;
+}
+
+.post-image-preview {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.post-image-preview.rounded {
+    border-radius: 50%;
+}
+
+.post-content {
+    padding: 5px 10px;
+}
+
+.post-content > h2 {
+    margin: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    transition: text-shadow .3s ease;
+}
+
+.post-content > h2:hover {
+    text-shadow: 0px 0px 5px rgba(35, 169, 88, 0.78);
+}
+
+.post-content > h2 > a {
+    display: table-cell;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post-content > p {
+    margin: 2px 0 0;
+    font-size: 11pt;
+}
+
+.etiquetas > .etiquetas-lista {
+    display: block;
+    padding: 0;
+    margin: 5px 0 0;
+    text-align: left;
+}
+
+.etiquetas > .etiquetas-lista > .etiqueta-item {
+    margin: 0 2px 10px 0;
+}
+
+.post-vote {
+    width: 100%;
+    border: 1px solid #a0a0a057;
+}
+
+.post-vote > div > .btn-vote {
+    width: 48%;
+    height: 100%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.post-vote > div > .btn-vote > #down {
+    margin: 0 auto;
+}
+
+.post-info {
+    width: 100%;
+    border: 1px solid #a0a0a057;
+}
+
+.post-info-list {
+    padding: 0 0 0 10px;
+}
+
+.post-info-list-item {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 11pt;
+}
+
+.post-info-list-item > * {
+    vertical-align: middle;
+}
+
+.post-info-list-item > svg {
+    width: 15px;
+    height: 15px;
+    fill: #dcdcdc;
+}
+
+/* -------------- post aside --------------- */
+
+.moderators-section {
+    width: 100%;
+    padding: 25px;
+}
+
+.moderators-section > div > h2 {
+    text-align: center;
+    margin: 0 0 1rem;
+    font-family: crimes times six;
+    font-weight: normal;
+}
+
+.aside-info {
+    background-color: #202025;
+    height: fit-content;
+}
+
+.moderators-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.moderator {
+    background-color: #313233;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+/* -------------- post comum --------------- */
+
+.artigo-container {
+    display: block;
+    border-radius: 10px;
+    padding: 10px 20%;
+}
+
+.artigo-relativo {
+    display: grid;
+    grid-template-columns: 30px calc(100% - 30px);
+    grid-template-rows: repeat(2, auto);
+}
+
+.artigo-aside {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.artigo-aside-item {
+    background-color: rgb(15, 16, 16);
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+#up, #down {
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    display: block;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#up {
+    transform: rotate(180deg);
+}
+
+#down {
+    margin: 5px auto 0;
+}
+
+.voted > g > path {
+    fill: #22b9a1
+}
+
+.delete-icon, .save-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    fill: #fff;
+}
+
+.delete-icon {
+    transition: fill .3s ease;
+}
+
+.delete-icon:hover {
+    fill: #af1a1a;
+}
+
+.edit-icon, .comment-icon {
+    fill: #fff;
+    width: 15px;
+    display: block;
+    transition: fill .3s ease;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.edit-icon:hover, .comment-icon:hover {
+    fill: #22b9a1;
+}
+
+.save-icon {
+    background-image: url(assets/bookmark.svg);
+    background-position: center;
+    background-size: cover;
+    transition: background-image .3s ease;
+}
+
+.save-icon:hover {
+    background-image: url("assets/bookmark (1).svg");
+}
+
+.artigo-wrapper {
+    background-color: rgba(15, 16, 16, 0.91);
+    min-height: 100%;
+    padding: 10px 0;
+    max-height: 70vh;
+    overflow-y: auto; 
+}
+
+.post-usuarios {
+    background-color: rgb(15, 16, 16);
+    align-content: center;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; 
+    border-top: 1px solid #3d3e3e;
+    padding: 10px
+}
+
+.usuario-original {
+    text-align: center;
+}
+
+.por {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-pic {
+    background-image: url(assets/kenny.jpg);
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-badge {
+    background-size: cover;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.mod-badge {
+    background-image: url("assets/mod.png");
+}
+
+.partner-badge {
+    background-image: url("assets/partner.png");
+}
+
+/* -------------- perfil do usuario --------------- */
+
+.user-container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(14, 12, 12, 0.98);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Roobert";
+}
+
+.user-banner {
+    position: relative;
+    height: 200px;
+}
+
+.user-banner > .banner {
+    height: 100px;
+    overflow: hidden;
+}
+
+.user-banner > .banner > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.imagem-perfil-container {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 100px 1fr;
+}
+
+.vetor-perfil {
+    display: block;
+    height: 5px;
+    background-color: #dc2e2e;
+}
+
+.imagem-perfil-container > .vetor-perfil {
+    align-self: self-end;
+    position: relative;
+    bottom: 35px;
+    width: 90%;
+    justify-self: center;
+}
+
+.imagem-perfil-container > .imagem-perfil {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    place-self: center;
+    border: 5px solid #dc2e2e;
+}
+
+.imagem-perfil-container > .imagem-perfil > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+ul.user-navbar {
+    padding: 0 5px;
+    list-style-type: none;
+    margin: -40px auto 15px;
+    text-align: center;
+}
+
+li.user-navbar-item {
+    display: inline-block;
+    margin: 0 2px;
+    position: relative;
+    min-width: 70px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .5s ease;
+}
+
+li.user-navbar-item.active,
+li.user-navbar-item:hover {
+    border-bottom: 2px solid  #22b9a1;
+}
+
+li.user-navbar-item > span {
+    display: block;
+    text-align: center;
+    margin: 5px;
+    transition: all .3s ease;
+    transition-property: background-color, border-left;
+}
+
+li.user-navbar-item.active > span,
+li.user-navbar-item:hover > span {
+    background-color: rgba(72, 71, 71, 0.46);
+}
+
+li.user-navbar-item > span.rotulo {
+    margin: 0px;
+    padding: 3px 6px;
+    border-left: 5px solid transparent;
+}
+
+li.user-navbar-item.active > span.rotulo,
+li.user-navbar-item:hover > span.rotulo {
+    border-left: 5px solid  #22b9a1;
+}
+
+.user-content {
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 40vh;
+    max-height: 250px;
+    border-top: 1px solid #7b7b7b26;
+    background-color: rgba(14, 14, 14, 1);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.user-gerais {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.nome-e-badges > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.username > .nome-e-badges > .nome {
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 300px;
+}
+
+.user-gerais > p {
+    margin: 5px auto;
+    font-size: 14px;
+    max-width: 80%;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.user-gerais > .vetor-perfil {
+    width: 30%;
+    margin: 10px auto;
+}
+
+.media-social-list {
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px auto 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.media-social-list > .media-social-item {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+}
+
+.media-social-list > .media-social-item > a > svg {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition: bottom .2s ease;
+}
+
+.media-social-list > .media-social-item > a > svg:hover {
+    bottom: 2px;
+    display: block;
+    box-shadow: 0 7px 13px -3px rgba(0, 0, 0, 0.82);
+}
+
+.stream-info-container {
+    text-align: center;
+}
+
+.stream-status {
+    margin: 5px 0;
+}
+
+.live-status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+} 
+
+.live-status.live {
+    background-color: #ff1010;
+}
+
+.live {
+    box-shadow: 0 0 0 rgba(255, 16, 16, 0.4);
+    animation: pulse-live-on 2s infinite;
+}
+
+.stream-title {
+    margin-bottom: 0;
+}
+
+/* -------------- artigo (markdown) --------------- */
+
+.o-artigo {
+    text-align: justify;
+}
+
+.o-artigo > *:not(.full-div) {
+    padding: 0 10%;
+    font-size: calc(1vw + 0.1rem);
+}
+
+.markdown-preview > *:not(.full-div) {
+    padding: 0;
+}
+
+.o-artigo p {
+    font-size: 11pt;
+}
+
+.o-artigo h1,
+.o-artigo h2,
+.o-artigo h3,
+.o-artigo h4,
+.o-artigo h5,
+.o-artigo h6 {
+    color: #d0d0d0;
+    margin: 0 0 -10px
+}
+
+.o-artigo h1 { font-size: calc(1vw + 1.5em) !important; }
+.o-artigo h2 { font-size: calc(1vw + 1.1em) !important; }
+.o-artigo h3 { font-size: calc(1vw + 0.7em) !important; }
+.o-artigo h4 { font-size: calc(1vw + .5em) !important; }
+.o-artigo h5 { font-size: calc(1vw + .43em) !important; }
+.o-artigo h6 { font-size: calc(1vw + .37em) !important; }
+
+.o-artigo h1 {
+    font-size: 22pt;
+}
+
+.o-artigo a {
+    color: #22b9a1;
+}
+
+.o-artigo > ul > li {
+    position: relative;
+    list-style: none;
+    padding-left: 1.2em;
+}
+
+.o-artigo > ul > li:before {
+    content: "↦";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.o-artigo ul > li > ul > li {
+    position: relative;
+    list-style: none;
+    margin-left: -1.2rem;
+    padding-left: 1.2em;
+}
+
+.o-artigo ul > li > ul > li:before {
+    content: "↪";
+    position: absolute;
+    left: 0;
+    color: #22b9a1;
+}
+
+.o-artigo p > img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* -------------- animações (keyframe) --------------- */
+
+@keyframes pulse-live-on {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 16, 16, 0.4);
+        box-shadow: 0 0 0 0 rgba(255, 16, 16, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 12px rgba(255, 16, 16, 0);
+        box-shadow: 0 0 0 12px rgba(255, 16, 16, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 16, 16, 0);
+        box-shadow: 0 0 0 0 rgba(255, 16, 16, 0);
+    }
+}
+
+/* -------------- media queries --------------- */
+
+@media screen and (max-width: 600px) {
+  .navbar li:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+
+  .navbar li.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+}
+
+/* -------------- custom scrollbar --------------- */
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(0,0,0,0);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+.auto-scrollbar::-webkit-scrollbar-track, 
+.auto-scrollbar::-webkit-scrollbar,
+.auto-scrollbar::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+
+.auto-scrollbar:hover.auto-scrollbar::-webkit-scrollbar-track, 
+.auto-scrollbar:hover.auto-scrollbar::-webkit-scrollbar, 
+.auto-scrollbar:hover.auto-scrollbar::-webkit-scrollbar-thumb {
+    visibility: visible;
+}

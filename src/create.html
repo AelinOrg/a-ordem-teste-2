@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Personagens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="hero-image not-home">
+  <header>
+      <nav>
+          <ul class="navbar" id="myTopnav">
+              <li class="nav-item"><a class="nav-item-link" href="home.html">Home</a></li>
+              <li class="nav-item dropdown">
+                RPG
+                <div class="dropdown-content">
+                  <a href="#">A Ordem Paranormal</a>
+                  <a href="#">O Segredo Na Floresta</a>
+                  <a href="post.html">Teorias</a>
+                  <a href="#">Personagens</a>
+                  <a href="jogadores.html">Jogadores</a>
+              </div>
+          </li> 
+
+          <li class="nav-item"><a class="nav-item-link" href="">Fanarts</a></li>
+          <li class="nav-item"><a class="nav-item-link" href="">Perfil</a></li>
+          <li class="nav-item icon" style="float: right;">
+            <span class="toggler-icon"></span>
+        </li>
+    </ul>
+</nav>
+</header>
+
+
+<main class="main">
+    <section class="wrapper-table create-post-form nav-off">
+        <form class="inner-table-cell">
+            
+        <!-- menu de opções
+
+        <ul class="create-options">
+            <h2>Criar/Postar</h2>
+            <li class="create-option">
+                <button class="btn create-btn">
+                    <span class="create-btn-icon-bg">
+                        <span class="create-btn-icon" id="criatura"></span>
+                    </span><a href="#">Criatura</a>
+                </button>
+            </li>
+            <li class="create-option">
+                <button class="btn create-btn">
+                    <span class="create-btn-icon-bg">
+                        <span class="create-btn-icon" id="fanart"></span>
+                    </span><a href="#">Fanart</a>
+                </button>
+            </li>
+            <li class="create-option">
+                <button class="btn create-btn">
+                    <span class="create-btn-icon-bg">
+                        <span class="create-btn-icon" id="teoria"></span>
+                    </span><a href="#">Teoria</a>
+                </button>
+            </li>
+            <li class="create-option">
+                <button class="btn create-btn">
+                    <span class="create-btn-icon-bg">
+                        <span class="create-btn-icon" id="personagem"></span>
+                    </span><a href="#">Personagem</a>
+                </button>
+            </li>
+        </ul>
+
+         -->
+
+        <!-- criatura -->
+
+        <div class="create-criatura">
+            <textarea class="custom-scrollbar" id="story" name="story">
+            # Sobre
+                        
+            Thiago Fritz é um jornalista que teve como motivação seguir na carreira por ter a oportunidade de escrever histórias de pessoas como o seu pai, (Arnaldo Fritz)[#], um renomado ator de sua época. Após a morte de seu pai, decidiu investigar ela a fundo e encontrou evidências de uma conexão entre ele e a (Ordem da Verdade)[#]. Esse fato despertou seu interesse, e por suas qualidades de investigação acabou se vendo dentro dela.
+
+            # Aparência Física
+
+            Thiago possui cabelos curtos e castanhos, barba rala, olhos castanhos, e um porte físico atlético. Durante o primeiro caso, utiliza camisa social rosa com as mangas puxadas e um colete preto. No segundo caso, ele ganha uma cicatriz que passa do ouvido para a bochecha, uma barba um pouco mais cheia, e usa um moletom cinza.
+            </textarea>
+
+            <aside class="create-criatura-wrapper">
+                <div class="form-criatura-info custom-scrollbar">
+                    <div class="form-inner">
+                        <input autocomplete="off" class="" id="image" type="text" name="image" placeholder="link de uma imagem">
+                    </div>
+
+                    <div class="form-inner">
+                        <h2>Gerais</h2>
+
+                        <input autocomplete="off" class="" id="nome" type="text" name="nome" placeholder="nome">
+
+                        <input autocomplete="off" class="" id="idade" type="tel" name="idade" placeholder="idade">
+
+                    </div>
+
+                    <div class="form-inner">
+                        <h2>Habilidades</h2>
+
+                        <select name="habilidades">
+                          <option selected>nenhuma</option>
+                          <option value="Força Fisica">Força Fisica</option>
+                          <option value="Fogo">Fogo</option>
+                          <option value="Eletricidade">Eletricidade</option>
+                          <option value="Telepatia">Telepatia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-inner">
+                        <h2>Extras</h2>
+
+                       <textarea id="story" name="story">Extras ; separados ; por ; ponto ; e ; virgula</textarea>
+                    </div>
+                </div>
+
+            </aside>
+            <div class="form-personagem-artigo custom-scrollbar">
+                <div class="form-artigo-header">
+                    <input class="input-artigo-title" autocomplete="off" class="" id="title" type="text" name="title" placeholder="titulo"></input>
+                    <select name="etiquetas">
+                          <option selected disabled>Etiquetas</option>
+                          <option value="A Ordem Paranormal">A Ordem Paranormal</option>
+                          <option value="O Segredo na Floresta">O Segredo na Floresta</option>
+                          <option value="Teoria">Teoria</option>
+                          <option value="Fanart">Fanart</option>
+                          <option value="Alex">Alex</option>
+                          <option value="Arthur">Arthur</option>
+                          <option value="Cesar">Cesar</option>
+                          <option value="Cristopher">Cristopher</option>
+                          <option value="Daniel">Daniel</option>
+                          <option value="Elizabeth">Elizabeth</option>
+                          <option value="Thiago Fritz">Thiago Fritz</option>
+                    </select>
+                </div> 
+
+                <div class="markdown-field">
+
+                    <div class="o-artigo markdown-preview">
+                        <h1>Sobre</h1>
+                        <p>Thiago Fritz é um jornalista que teve como motivação seguir na carreira por ter a oportunidade de escrever histórias de pessoas como o seu pai, <a href="#">Arnaldo Fritz</a>, um renomado ator de sua época. Após a morte de seu pai, decidiu investigar ela a fundo e encontrou evidências de uma conexão entre ele e a <a href="#">Ordem da Verdade</a>. Esse fato despertou seu interesse, e por suas qualidades de investigação acabou se vendo dentro dela.</p>
+
+                        <h1>Aparência Física</h1>
+                        <p>Thiago possui cabelos curtos e castanhos, barba rala, olhos castanhos, e um porte físico atlético. Durante o primeiro caso, utiliza camisa social rosa com as mangas puxadas e um colete preto. No segundo caso, ele ganha uma cicatriz que passa do ouvido para a bochecha, uma barba um pouco mais cheia, e usa um moletom cinza.</p>
+                    </div>
+                </div>      
+            </div>
+            <button class="btn btn-post">Postar</button>
+        </div>
+
+        <!-- personagem 
+        
+        <div class="create-personagem">
+            <textarea class="custom-scrollbar" id="story" name="story">
+            # Sobre
+                        
+            Thiago Fritz é um jornalista que teve como motivação seguir na carreira por ter a oportunidade de escrever histórias de pessoas como o seu pai, (Arnaldo Fritz)[#], um renomado ator de sua época. Após a morte de seu pai, decidiu investigar ela a fundo e encontrou evidências de uma conexão entre ele e a (Ordem da Verdade)[#]. Esse fato despertou seu interesse, e por suas qualidades de investigação acabou se vendo dentro dela.
+
+            # Aparência Física
+
+            Thiago possui cabelos curtos e castanhos, barba rala, olhos castanhos, e um porte físico atlético. Durante o primeiro caso, utiliza camisa social rosa com as mangas puxadas e um colete preto. No segundo caso, ele ganha uma cicatriz que passa do ouvido para a bochecha, uma barba um pouco mais cheia, e usa um moletom cinza.
+            </textarea>
+
+            <aside class="create-personagem-wrapper">
+                <div class="form-personagem-info custom-scrollbar">
+                    <div class="form-inner">
+                        <input autocomplete="off" class="" id="image" type="text" name="image" placeholder="link de uma imagem">
+                    </div>
+
+                    <div class="form-inner">
+                        <h2>Gerais</h2>
+
+                        <input autocomplete="off" class="" id="nome" type="text" name="nome" placeholder="nome">
+
+                        <input autocomplete="off" class="" id="idade" type="tel" name="idade" placeholder="idade">
+
+                        <input autocomplete="off" class="" id="profissão" type="text" name="profissão" placeholder="profissão/ocupação">
+
+                        <input autocomplete="off" class="" id="nacionalidade" type="text" name="nacionalidade" placeholder="nacionalidade">
+
+                        <label class="label" for="jogadores">Interpretado por</label>
+                        <select name="jogadores">
+                          <option value="Cellbit">Cellbit</option>
+                          <option value="Calango">Calango</option>
+                          <option value="Luis">Luis</option>
+                          <option value="Gabi">Gabi</option>
+                          <option value="Rakin">Rakin</option>
+                        </select>
+                    </div>
+
+                    <div class="form-inner">
+                        <h2>Fobias</h2>
+
+                        <select name="fobias">
+                          <option selected>nenhuma</option>
+                          <option value="muitas">muitas</option>
+                          <option value="muitas">muitas</option>
+                          <option value="muitas">muitas</option>
+                          <option value="muitas">muitas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-inner">
+                        <h2>Extras</h2>
+
+                       <textarea id="story" name="story">Extras ; separados ; por ; ponto ; e ; virgula</textarea>
+                    </div>
+                </div>
+
+            </aside>
+            <div class="form-personagem-artigo custom-scrollbar">
+                <div class="form-artigo-header">
+                    <input class="input-artigo-title" autocomplete="off" class="" id="title" type="text" name="title" placeholder="titulo"></input>
+                    <select name="etiquetas">
+                          <option selected disabled>Etiquetas</option>
+                          <option value="A Ordem Paranormal">A Ordem Paranormal</option>
+                          <option value="O Segredo na Floresta">O Segredo na Floresta</option>
+                          <option value="Teoria">Teoria</option>
+                          <option value="Fanart">Fanart</option>
+                          <option value="Alex">Alex</option>
+                          <option value="Arthur">Arthur</option>
+                          <option value="Cesar">Cesar</option>
+                          <option value="Cristopher">Cristopher</option>
+                          <option value="Daniel">Daniel</option>
+                          <option value="Elizabeth">Elizabeth</option>
+                          <option value="Thiago Fritz">Thiago Fritz</option>
+                    </select>
+                </div> 
+
+                <div class="markdown-field">
+
+                    <div class="o-artigo markdown-preview">
+                        <h1>Sobre</h1>
+                        <p>Thiago Fritz é um jornalista que teve como motivação seguir na carreira por ter a oportunidade de escrever histórias de pessoas como o seu pai, <a href="#">Arnaldo Fritz</a>, um renomado ator de sua época. Após a morte de seu pai, decidiu investigar ela a fundo e encontrou evidências de uma conexão entre ele e a <a href="#">Ordem da Verdade</a>. Esse fato despertou seu interesse, e por suas qualidades de investigação acabou se vendo dentro dela.</p>
+
+                        <h1>Aparência Física</h1>
+                        <p>Thiago possui cabelos curtos e castanhos, barba rala, olhos castanhos, e um porte físico atlético. Durante o primeiro caso, utiliza camisa social rosa com as mangas puxadas e um colete preto. No segundo caso, ele ganha uma cicatriz que passa do ouvido para a bochecha, uma barba um pouco mais cheia, e usa um moletom cinza.</p>
+                    </div>
+                </div>      
+            </div>
+            <button class="btn btn-post">Postar</button>
+        </div>
+
+        -->
+
+        <!-- fanart 
+
+        <div class="dropzone">
+            <input type="file" id="fileDropRef">
+            <div class="drop-placeholder">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 449.306 449.306" style="enable-background:new 0 0 449.306 449.306;" xml:space="preserve">
+                <g><path d="M160.914,98.834l53.29-53.812v192.784c0,5.771,4.678,10.449,10.449,10.449s10.449-4.678,10.449-10.449V45.021
+                l53.29,53.812c4.247,3.503,10.382,3.503,14.629,0c4.047-4.24,4.047-10.911,0-15.151l-71.053-71.576
+                c-4.165-3.725-10.464-3.725-14.629,0l-71.053,71.576c-4.047,4.24-4.047,10.911,0,15.151
+                C150.45,102.559,156.749,102.559,160.914,98.834z"/><path d="M447.739,255.568l-58.514-127.478c-1.766-3.953-5.603-6.578-9.927-6.792h-50.155c-5.771,0-10.449,4.678-10.449,10.449
+                s4.678,10.449,10.449,10.449h43.363l48.588,109.714h-59.559c-27.004-0.133-51.563,15.625-62.694,40.229
+                c-8.062,16.923-25.141,27.698-43.886,27.69h-60.604c-18.745,0.008-35.823-10.767-43.886-27.69
+                c-11.131-24.604-35.69-40.362-62.694-40.229H29.257l57.469-109.714h33.437c5.771,0,10.449-4.678,10.449-10.449
+                s-4.678-10.449-10.449-10.449H80.457c-4.017,0.298-7.584,2.676-9.404,6.269L2.09,254.523c-1.139,1.53-1.859,3.331-2.09,5.224
+                V390.36c0,28.735,25.078,49.633,53.812,49.633h341.682c28.735,0,53.812-20.898,53.812-49.633V259.748
+                C448.931,258.304,448.405,256.903,447.739,255.568z"/></g></svg>
+                <h3>Arraste e solte o arquivo aqui</h3>
+                <h3>ou</h3>
+                <button class="btn" for="fileDropRef">Selecione uma imagem</button>         
+            </div>
+        </div>
+
+        -->
+
+        </form>
+    </section>
+</main>
+
+</body>
+</html>

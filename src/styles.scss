@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+*:after, *:before, * {
+    box-sizing: border-box;
+}
+
+body {
+ 
+}
+
+header {
+    & > nav {
+        
+    }
+}
+
+.hero-image {
+    background-image: url("assets/bg_5.png");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
